@@ -55,6 +55,44 @@ Celsius = (Fahrenheit - 32) × 5 / 9
 ## Space Complexity
 - **O(1)**
 
+
+# Task 3 - Student Grade Average
+
+## Objective
+Develop a Java program to calculate the average marks of a student and determine the corresponding grade based on the average score.
+
+## Features
+- Accepts the number of subjects from the user.
+- Takes marks for each subject.
+- Validates user input.
+- Calculates the average marks.
+- Determines the grade based on the average.
+- Displays the average and final grade.
+
+## Grade Criteria
+
+| Average Marks | Grade |
+|--------------:|:-----:|
+| 90 - 100      | A     |
+| 80 - 89       | B     |
+| 70 - 79       | C     |
+| 60 - 69       | D     |
+| Below 60      | F     |
+
+## Concepts Used
+- Arrays
+- Methods (Functions)
+- Loops
+- Conditional Statements
+- Input Validation
+- Scanner Class
+
+## Time Complexity
+- **O(n)**
+
+## Space Complexity
+- **O(n)**
+
 ## Technologies Used
 - Java
 - Eclipse IDE
