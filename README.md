@@ -55,6 +55,7 @@ Celsius = (Fahrenheit - 32) × 5 / 9
 ## Space Complexity
 - **O(1)**
 
+<<<<<<< HEAD
 
 # Task 3 - Student Grade Average
 
@@ -86,6 +87,32 @@ Develop a Java program to calculate the average marks of a student and determine
 - Conditional Statements
 - Input Validation
 - Scanner Class
+=======
+# Task 4 - Secure Password Generator
+
+## Objective
+Develop a Java application to generate secure and customizable passwords based on user preferences.
+
+## Features
+- Accepts the desired password length.
+- Allows users to include:
+  - Uppercase letters
+  - Lowercase letters
+  - Numbers
+  - Special characters
+- Validates user inputs.
+- Generates a random and secure password using the `SecureRandom` class.
+- Ensures at least one character type is selected.
+
+## Concepts Used
+- Methods (Functions)
+- StringBuilder
+- Conditional Statements
+- Input Validation
+- Scanner Class
+- SecureRandom
+- Boolean Variables
+>>>>>>> 235856b (Task4 completed)
 
 ## Time Complexity
 - **O(n)**
@@ -93,6 +120,11 @@ Develop a Java program to calculate the average marks of a student and determine
 ## Space Complexity
 - **O(n)**
 
+<<<<<<< HEAD
+=======
+> *n = Password Length*
+
+>>>>>>> 235856b (Task4 completed)
 ## Technologies Used
 - Java
 - Eclipse IDE
