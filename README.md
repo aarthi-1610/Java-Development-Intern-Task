@@ -112,7 +112,7 @@ Develop a Java application to generate secure and customizable passwords based o
 - Scanner Class
 - SecureRandom
 - Boolean Variables
->>>>>>> 235856b (Task4 completed)
+
 
 ## Time Complexity
 - **O(n)**
@@ -120,11 +120,9 @@ Develop a Java application to generate secure and customizable passwords based o
 ## Space Complexity
 - **O(n)**
 
-<<<<<<< HEAD
 =======
 > *n = Password Length*
 
->>>>>>> 235856b (Task4 completed)
 ## Technologies Used
 - Java
 - Eclipse IDE
