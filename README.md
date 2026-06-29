@@ -1,4 +1,4 @@
-## Level2
+# Level1
 # Task 1 - Number Grid Search
 
 ## Objective
@@ -121,10 +121,9 @@ Develop a Java application to generate secure and customizable passwords based o
 ## Space Complexity
 - **O(n)**
 
-*n = Password Length*
 =======
 
-## Level2
+# Level2
 
 # Task 1 - ❌⭕ Two-Player Tic-Tac-Toe
 
