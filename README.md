@@ -365,6 +365,137 @@ To validate a password, we **must examine every character at least once**. There
 
 ---
 
+
+# Task 3 -🔒 File Encryptor & Decryptor
+
+A Java console application that **encrypts and decrypts text files** using the **Caesar Cipher** algorithm. Letters are shifted by a fixed key, while digits, spaces, and special characters remain unchanged — making it easy to secure and restore plain text files.
+
+---
+
+## 📌 About the Project
+
+This project was developed as part of a **Java Development Internship (Level 2)** at SaiKet Systems. It demonstrates file I/O operations, algorithm implementation, and exception handling in Java.
+
+---
+
+## ✨ Features
+
+- 🔐 **Encrypt** any `.txt` file using Caesar Cipher (shift key = 3)
+- 🔓 **Decrypt** previously encrypted files back to original content
+- 📄 Processes files **line by line** — memory efficient, no full file load
+- ✅ Handles uppercase and lowercase letters separately
+- 🔢 Digits, spaces, and symbols are **left unchanged**
+- ⚠️ Proper error handling for missing or inaccessible files
+
+---
+
+## 🧮 Algorithm — Caesar Cipher
+
+Each letter in the file is shifted by **SHIFT = 3** positions in the alphabet:
+
+| Original | Encrypted (Shift 3) |
+|---|---|
+| A | D |
+| Z | C (wraps around) |
+| a | d |
+| Hello! | Khoor! |
+
+**Decryption** reverses the shift using `26 - SHIFT = 23`:
+```
+Encrypt: (char - base + shift) % 26 + base
+Decrypt: (char - base + 23)   % 26 + base
+```
+
+---
+
+## 🛠️ Tech Stack
+
+| Tool | Details |
+|------|---------|
+| Language | Java (JDK 8+) |
+| File I/O | `BufferedReader`, `BufferedWriter`, `FileReader`, `FileWriter` |
+| IDE | IntelliJ IDEA / Eclipse / VS Code |
+| Type | Console Application |
+
+---
+
+## ▶️ How to Run
+
+```bash
+# Step 1: Compile
+javac Task3_FileEncryptor.java
+
+# Step 2: Run
+java Task3_FileEncryptor
+```
+
+**Sample Interaction:**
+```
+========================================
+     File Encryptor / Decryptor
+     Algorithm: Caesar Cipher (Shift=3)
+========================================
+1. Encrypt a file
+2. Decrypt a file
+Choose option (1 or 2): 1
+Enter input file path  : message.txt
+Enter output file path : message_encrypted.txt
+
+File encrypted successfully!
+Encrypted file saved at: message_encrypted.txt
+```
+
+**Before encryption (`message.txt`):**
+```
+Hello World!
+Java is fun.
+```
+
+**After encryption (`message_encrypted.txt`):**
+```
+Khoor Zruog!
+Mdyd lv ixq.
+```
+
+---
+
+## 📊 Complexity Analysis
+
+| Operation | Time Complexity | Space Complexity | Reason |
+|---|---|---|---|
+| `caesarShift()` per char | O(1) | O(1) | Single math operation per character |
+| `encryptFile()` / `decryptFile()` | O(n) | O(L) | n = total chars; L = max line length |
+
+**n = total number of characters in the file**
+**L = length of the longest line (only one line held in memory at a time)**
+
+**Why O(n)?**
+Every character must be read and transformed exactly once. There is no way to encrypt/decrypt a file faster than O(n) since we must touch every character. **O(n) is the optimal complexity.** ✅
+
+**Why O(L) space and not O(n)?**
+We use `BufferedReader` to process **one line at a time**, so only the current line (max length L) lives in memory — not the entire file. This makes the program scalable for large files.
+
+
+---
+
+## ⚙️ Customization
+
+To change the cipher key, update this line in the source:
+```java
+static final int SHIFT = 3;  // Change to any value between 1 and 25
+```
+
+---
+
+## 📚 Skills Demonstrated
+
+- File handling with `BufferedReader` and `BufferedWriter`
+- Caesar Cipher algorithm implementation
+- Exception handling (`FileNotFoundException`, `IOException`)
+- Memory-efficient line-by-line file processing
+
+---
+
 ## Technologies Used
 - Java
 - Eclipse IDE
