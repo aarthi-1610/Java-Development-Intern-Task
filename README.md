@@ -496,6 +496,139 @@ static final int SHIFT = 3;  // Change to any value between 1 and 25
 
 ---
 
+# Task 4 - 💰 Personal Expense Tracker
+
+A Java console application that helps you **track daily expenses with persistent file storage**. Add expenses by category, view all records, check total spending, and filter by category — all saved to a local text file that persists across sessions.
+
+---
+
+## 📌 About the Project
+
+This project was developed as part of a **Java Development Internship (Level 2)** at SaiKet Systems. It demonstrates file-based data persistence, menu-driven interaction, and structured data handling in Java — without any external database.
+
+---
+
+## ✨ Features
+
+- ➕ **Add Expense** — Save category, description, and amount to file
+- 📋 **View All Expenses** — Displays all records in a formatted table
+- 💵 **View Total Spending** — Calculates and shows total amount spent
+- 🔍 **Filter by Category** — View and total expenses for a specific category
+- 💾 **Persistent Storage** — All data saved to `expenses.txt` (survives app restart)
+- ✅ Input validation for amount and menu choice
+- 🔁 Loop-based menu until user exits
+
+---
+
+## 🗂️ Supported Categories
+
+| Category | Examples |
+|---|---|
+| Food | Lunch, Dinner, Groceries |
+| Travel | Cab, Train ticket, Fuel |
+| Bills | Electricity, Internet, Rent |
+| Shopping | Clothes, Electronics |
+| Other | Medicines, Books, Miscellaneous |
+
+---
+
+## 🛠️ Tech Stack
+
+| Tool | Details |
+|------|---------|
+| Language | Java (JDK 8+) |
+| Storage | File-based (`expenses.txt`) |
+| File I/O | `BufferedReader`, `BufferedWriter`, `FileWriter (append mode)` |
+| IDE | IntelliJ IDEA / Eclipse / VS Code |
+| Type | Console Application |
+
+---
+
+## ▶️ How to Run
+
+```bash
+# Step 1: Compile
+javac Task4_ExpenseTracker.java
+
+# Step 2: Run
+java Task4_ExpenseTracker
+```
+
+**Sample Interaction:**
+```
+========================================
+       Personal Expense Tracker
+========================================
+
+--- MENU ---
+1. Add Expense
+2. View All Expenses
+3. View Total Spending
+4. View by Category
+5. Exit
+Choose option: 1
+
+Category (Food / Travel / Bills / Shopping / Other): Food
+Description: Lunch at canteen
+Amount (Rs): 85
+Expense saved: Food - Lunch at canteen - Rs 85.00
+```
+
+```
+Choose option: 2
+
+--- All Expenses ---
+1   Food         Lunch at canteen          Rs 85.00
+2   Travel       Auto to college           Rs 40.00
+3   Bills        Internet recharge         Rs 299.00
+```
+
+```
+Choose option: 3
+
+--- Spending Summary ---
+Total Expenses : 3
+Total Amount   : Rs 424.00
+```
+
+---
+
+## 💾 Data Storage Format
+
+Each expense is saved as one line in `expenses.txt`:
+```
+Category|Description|Amount
+Food|Lunch at canteen|85.00
+Travel|Auto to college|40.00
+Bills|Internet recharge|299.00
+```
+
+The file is opened in **append mode** — existing data is never overwritten.
+
+---
+
+## 📊 Complexity Analysis
+
+| Operation | Time Complexity | Space Complexity | Reason |
+|---|---|---|---|
+| `addExpense()` | O(1) | O(1) | Appends exactly one line to file |
+| `viewAllExpenses()` | O(n) | O(1) | Reads all n records, one line at a time |
+| `viewTotal()` | O(n) | O(1) | Scans all n records to sum amounts |
+| `viewByCategory()` | O(n) | O(1) | Scans all n records for matches |
+
+**n = number of expense records stored in the file**
+---
+
+## 📚 Skills Demonstrated
+
+- File append mode using `FileWriter(path, true)`
+- Line-by-line file reading with `BufferedReader`
+- String parsing with `split()` for structured records
+- Exception handling (`FileNotFoundException`, `IOException`)
+- `printf` for aligned tabular console output
+
+---
+
 ## Technologies Used
 - Java
 - Eclipse IDE

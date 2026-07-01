@@ -1,0 +1,4 @@
+Food|Lunch at canteen|100.00
+travel|bus to college|51.00
+bills|internet recharge|299.00
+shopping|new shoe|300.00
