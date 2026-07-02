@@ -629,6 +629,240 @@ The file is opened in **append mode** — existing data is never overwritten.
 
 ---
 
+
+# Level3
+
+# Task 1 -  Contact Management System 
+
+## 📌 Project Overview
+
+The **Contact Management System** is a console-based Java application that allows users to efficiently manage personal or business contacts. It provides essential CRUD (Create, Read, Update, Delete) operations along with input validation to ensure data accuracy and reliability.
+
+This project demonstrates the practical application of **Object-Oriented Programming (OOP)** concepts, Java Collections, user input handling, and data validation.
+
+---
+
+## 🚀 Features
+
+* Add a new contact
+* View all saved contacts
+* Search a contact using Contact ID
+* Update existing contact details
+* Delete a contact
+* Auto-generated unique Contact ID
+* Input validation for:
+
+  * Contact Name
+  * Phone Number
+  * Email Address
+* User-friendly menu-driven interface
+* Handles invalid user inputs gracefully
+
+---
+
+## 🛠️ Technologies Used
+
+* Java
+* Eclipse IDE (or any Java IDE)
+* Java Collections (`ArrayList`)
+* Object-Oriented Programming (OOP)
+
+---
+
+## 📖 Functionalities
+
+### 1. Add Contact
+
+Allows the user to create a new contact by entering:
+
+* Name
+* Phone Number
+* Email Address
+
+Each contact is assigned a unique Contact ID automatically.
+
+---
+
+### 2. View Contacts
+
+Displays all stored contacts in a readable format.
+
+Information displayed:
+
+* Contact ID
+* Name
+* Phone Number
+* Email Address
+
+---
+
+### 3. Search Contact
+
+Searches for a contact using its unique Contact ID.
+
+Displays:
+
+* Contact information if found
+* "Contact not found" message if the ID does not exist
+
+---
+
+### 4. Update Contact
+
+Allows modification of an existing contact by entering its Contact ID.
+
+Users can update:
+
+* Name
+* Phone Number
+* Email Address
+
+---
+
+### 5. Delete Contact
+
+Deletes a contact permanently using the Contact ID.
+
+Displays a success message after successful deletion.
+
+---
+
+## ✅ Input Validation
+
+The application validates user inputs before saving contact details.
+
+### Name Validation
+
+* Only alphabets and spaces are allowed
+* Minimum 2 characters
+* Numbers and special characters are not accepted
+
+**Examples**
+
+Valid:
+
+* Aarthi
+* Ravi Kumar
+
+Invalid:
+
+* 12345
+* Aarthi123
+* @John
+
+---
+
+### Phone Number Validation
+
+Rules:
+
+* Exactly 10 digits
+* Must start with digits 6–9
+* Alphabets and special characters are not allowed
+
+**Examples**
+
+Valid:
+
+* 9876543210
+* 8123456789
+
+Invalid:
+
+* 1234567890
+* 987654321
+* 98765432101
+* 98AB567890
+
+---
+
+### Email Validation
+
+Accepts standard email format.
+
+**Examples**
+
+Valid:
+
+* [aarthi@gmail.com](mailto:aarthi@gmail.com)
+* [user123@yahoo.com](mailto:user123@yahoo.com)
+* [abc@gmail.co.in](mailto:abc@gmail.co.in)
+
+Invalid:
+
+* gmail.com
+* abc@
+* @gmail.com
+* abc@gmail
+
+---
+
+## 🧠 OOP Concepts Implemented
+
+* Classes and Objects
+* Encapsulation
+* Constructors
+* Getters and Setters
+* Method Calling
+* Object Manipulation
+
+---
+
+## 📚 Java Concepts Used
+
+* ArrayList
+* Scanner
+* Loops
+* Conditional Statements
+* Methods
+* Regular Expressions (Regex)
+* String Methods
+* Exception Prevention using Input Validation
+
+---
+
+## ▶️ How to Run
+
+1. Clone this repository.
+2. Open the project in Eclipse or any Java IDE.
+3. Compile the Java files.
+4. Run the `ContactManagementSystem` class.
+5. Use the menu options to manage contacts.
+
+---
+
+## 💡 Learning Outcomes
+
+Through this project, I gained hands-on experience in:
+
+* Designing a menu-driven Java application
+* Applying Object-Oriented Programming concepts
+* Managing dynamic data using ArrayList
+* Implementing CRUD operations
+* Validating user input using Regular Expressions (Regex)
+* Writing clean, modular, and reusable Java code
+* Improving console-based application development skills
+
+---
+
+## 🔮 Future Enhancements
+
+* Store contacts in a database (MySQL)
+* File handling for permanent data storage
+* Search by name or phone number
+* Sort contacts alphabetically
+* Import and export contacts (CSV/Excel)
+* Duplicate phone number and email detection
+* Graphical User Interface (Java Swing/JavaFX)
+* Spring Boot REST API version
+
+---
+
+👩‍💻 Author
+
+Aarthi T
+B.Tech – Artificial Intelligence and Data Science
+
 ## Technologies Used
 - Java
 - Eclipse IDE
