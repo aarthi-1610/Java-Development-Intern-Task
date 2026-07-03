@@ -844,25 +844,212 @@ Through this project, I gained hands-on experience in:
 * Improving console-based application development skills
 
 ---
+# Task 2 - Student Record Management System
 
-## 🔮 Future Enhancements
-
-* Store contacts in a database (MySQL)
-* File handling for permanent data storage
-* Search by name or phone number
-* Sort contacts alphabetically
-* Import and export contacts (CSV/Excel)
-* Duplicate phone number and email detection
-* Graphical User Interface (Java Swing/JavaFX)
-* Spring Boot REST API version
+A Java console-based application that manages student records using Object-Oriented Programming (OOP) principles and File Handling. The system allows users to add, store, and retrieve student information while ensuring data validation and persistence through a text file.
 
 ---
 
-👩‍💻 Author
+## 📌 Project Overview
 
-Aarthi T
-B.Tech – Artificial Intelligence and Data Science
+The Student Record Management System is designed to simplify student data management in a console environment. The application stores student records permanently using a text file, preventing data loss after the program exits.
+
+The project demonstrates the implementation of Java OOP concepts, collections, file handling, input validation, and exception handling.
+
+---
+
+## ✨ Features
+
+- Add new student records
+- View all student records
+- Store data permanently using File Handling
+- Load saved records automatically when the application starts
+- Prevent duplicate Roll Numbers
+- Accept marks for multiple subjects
+- Automatically calculate:
+  - Total Marks
+  - Average Marks
+- Validate student name
+- Validate subject count
+- Validate marks (0–100)
+- User-friendly menu-driven interface
+- Handles invalid user input gracefully
+
+---
+
+## 🛠 Technologies Used
+
+- Java
+- Object-Oriented Programming (OOP)
+- File Handling
+- Collections (ArrayList)
+- Exception Handling
+- Scanner Class
+
+---
+
+## 📖 Concepts Implemented
+
+### Object-Oriented Programming
+
+- Classes
+- Objects
+- Constructors
+- Encapsulation
+- Method Overriding (`toString()`)
+
+### Java Collections
+
+- ArrayList
+
+### File Handling
+
+- File
+- FileReader
+- FileWriter
+- BufferedReader
+- PrintWriter
+
+### Exception Handling
+
+- IOException
+- Input Validation
+
+### Java Utilities
+
+- Scanner
+- String Methods
+- Regular Expressions
+
+---
+
+## 📋 Menu
+
+```
+========== STUDENT RECORD SYSTEM ==========
+
+1. Add Student
+
+2. View Students
+
+3. Exit
+```
+
+---
+
+## ✔ Input Validation
+
+The application performs several validations to ensure accurate data entry.
+
+### Roll Number
+
+- Must be an integer
+- Duplicate Roll Numbers are not allowed
+
+### Student Name
+
+- Cannot be empty
+- Accepts only alphabets and spaces
+- Rejects numbers and special characters
+
+### Subject Count
+
+- Must be greater than zero
+
+### Marks
+
+- Accepts only numeric values
+- Range must be between 0 and 100
+
+---
+
+## 📊 Student Details Stored
+
+Each student record contains:
+
+- Roll Number
+- Student Name
+- Total Subjects
+- Total Marks
+- Average Marks
+
+---
+
+## 💾 Data Storage
+
+All student records are stored in a text file.
+
+```
+students.txt
+```
+
+Example format:
+
+```
+101,Aarthi,5,438.0,87.6
+102,Rahul,4,356.0,89.0
+```
+
+The application automatically loads these records when it starts.
+
+---
+
+## ⚙ Working Process
+
+1. Application starts
+2. Existing student records are loaded
+3. User selects an option from the menu
+4. Student details are validated
+5. Total marks and average are calculated
+6. Records are saved to the text file
+7. User can view all stored records
+8. Data remains available after restarting the application
+
+---
+
+## 🧪 Error Handling
+
+The project handles:
+
+- Invalid menu choices
+- Invalid Roll Numbers
+- Duplicate Roll Numbers
+- Empty names
+- Invalid student names
+- Invalid subject count
+- Invalid marks
+- File read/write errors
+
+---
+
+## 📚 Learning Outcomes
+
+This project helped in understanding:
+
+- Java Object-Oriented Programming
+- Encapsulation
+- Constructors
+- Collections
+- File Handling
+- Data Persistence
+- Input Validation
+- Exception Handling
+- Console-Based Application Development
+
+---
+
 
 ## Technologies Used
 - Java
 - Eclipse IDE
+
+
+## 👩‍💻 Author
+
+**Aarthi T**
+
+B.Tech – Artificial Intelligence and Data Science
+
+Java Developer | Problem Solver | AI Enthusiast
+
+---
