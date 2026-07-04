@@ -1243,16 +1243,6 @@ This project helped strengthen knowledge in:
 
 ---
 
-## 📌 Project Highlights
-
-* Beginner-friendly Core Java project
-* Menu-driven console application
-* Object-Oriented design
-* Proper input validation
-* Duplicate record prevention
-* Clean and readable code structure
-* Suitable for Java practice and GitHub portfolio
-
 ## Technologies Used
 - Java
 - Eclipse IDE
