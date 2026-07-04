@@ -1038,6 +1038,220 @@ This project helped in understanding:
 
 ---
 
+# Task 3 - Library Management System (Core Java)
+
+## 📖 Project Overview
+
+The **Library Management System** is a menu-driven console application developed using **Core Java**. It allows users to manage a collection of books by adding new books, viewing available books, issuing books, and returning issued books.
+
+This project demonstrates the practical implementation of **Object-Oriented Programming (OOP)** concepts, input validation, collections, and menu-driven application development.
+
+---
+
+## 🚀 Features
+
+* 📚 Add new books
+* 📋 Display all books
+* 📖 Issue a book
+* 🔄 Return a book
+* ✅ Auto-generated Book ID
+* ✅ Prevent duplicate book entries
+* ✅ Book title validation
+* ✅ Author name validation
+* ✅ Empty input validation
+* ✅ Invalid menu choice handling
+* ✅ Book availability status (Available / Issued)
+
+---
+
+## 🛠 Technologies Used
+
+* Java
+* Object-Oriented Programming (OOP)
+* Java Collections (`ArrayList`)
+* Scanner Class
+
+
+---
+
+## 🎯 Functionalities
+
+### 1. Add Book
+
+Users can add a new book by entering:
+
+* Book Title
+* Author Name
+
+The system automatically generates a unique Book ID.
+
+Validation includes:
+
+* Book title cannot be empty
+* Author name cannot be empty
+* Invalid characters are rejected
+* Duplicate books are not allowed
+
+---
+
+### 2. Display Books
+
+Displays all books stored in the library with:
+
+* Book ID
+* Book Title
+* Author Name
+* Current Status
+
+Example Status:
+
+* Available
+* Issued
+
+---
+
+### 3. Issue Book
+
+Allows users to issue a book using its Book ID.
+
+The system checks:
+
+* Book ID exists
+* Book is available
+* Prevents issuing an already issued book
+
+---
+
+### 4. Return Book
+
+Allows users to return a previously issued book.
+
+The system checks:
+
+* Book ID exists
+* Book has already been issued
+* Prevents returning books that are already available
+
+---
+
+## ✔ Input Validation
+
+The application performs several validations to ensure data integrity.
+
+### Book Title Validation
+
+* Cannot be empty
+* Accepts meaningful titles
+* Supports letters, numbers, spaces, apostrophes, hyphens, colons, and parentheses
+
+Examples:
+
+* Java Programming
+* Head First Java
+* Clean Code
+* Data Structures
+
+---
+
+### Author Name Validation
+
+* Cannot be empty
+* Accepts only alphabets and spaces
+
+Examples:
+
+* James Gosling
+* Robert Martin
+* Herbert Schildt
+
+---
+
+### Duplicate Book Detection
+
+The application prevents adding the same book more than once.
+
+Duplicate checking is performed using:
+
+* Book Title
+* Author Name
+
+If both match an existing record, the book is rejected.
+
+---
+
+## 🧠 OOP Concepts Used
+
+* Class
+* Object
+* Encapsulation
+* Constructors
+* Methods
+* Method Invocation
+* Object Creation
+
+---
+
+## 📚 Java Concepts Used
+
+* ArrayList
+* Scanner
+* Loops
+* Conditional Statements
+* Methods
+* Regular Expressions (Regex)
+* Exception-safe input handling
+
+---
+
+## 🔄 Program Workflow
+
+1. Start the application
+2. Display the main menu
+3. Select an option
+4. Perform the requested operation
+5. Return to the menu
+6. Exit the application
+
+---
+
+## 💡 Learning Outcomes
+
+This project helped strengthen knowledge in:
+
+* Object-Oriented Programming
+* Java Collections Framework
+* Input Validation
+* Menu-Driven Application Development
+* Data Management using ArrayList
+* Clean Code Practices
+* Console-Based Application Design
+
+---
+
+
+## ▶️ How to Run
+
+1. Clone the repository.
+
+2. Open the project in your preferred Java IDE (Eclipse, IntelliJ IDEA, or VS Code).
+
+3. Compile the project.
+
+4. Run the `LibraryManagementSystem` class.
+
+5. Use the menu to manage library operations.
+
+---
+
+## 📌 Project Highlights
+
+* Beginner-friendly Core Java project
+* Menu-driven console application
+* Object-Oriented design
+* Proper input validation
+* Duplicate record prevention
+* Clean and readable code structure
+* Suitable for Java practice and GitHub portfolio
 
 ## Technologies Used
 - Java
