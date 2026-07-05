@@ -1,0 +1,2 @@
+[2026-07-05 15:03:51] [INFO] User logged in successfully
+[2026-07-05 15:05:41] [ERROR] Database connection faild

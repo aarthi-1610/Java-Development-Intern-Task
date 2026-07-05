@@ -1243,17 +1243,123 @@ This project helped strengthen knowledge in:
 
 ---
 
+
+# Task 4 - Timestamped Log File Generator
+
+## Overview
+
+The **Timestamped Log File Generator** is a simple Java console application that records log messages along with the current date, time, and log level. It demonstrates Java file handling, date and time APIs, exception handling, user input validation, and structured logging.
+
+The application appends each log entry to a text file (`log.txt`) instead of overwriting existing data, making it suitable for maintaining a continuous log history.
+
+---
+
+## Features
+
+* Records log messages with the current timestamp.
+* Supports log levels:
+
+  * INFO
+  * WARNING
+  * ERROR
+* Validates user input.
+* Prevents empty log messages.
+* Rejects invalid log levels.
+* Appends new log entries without deleting previous records.
+* Automatically creates the log file if it does not exist.
+* Uses Java's modern Date and Time API.
+
+---
+
+## Technologies Used
+
+* Java
+* File Handling (`FileWriter`, `PrintWriter`)
+* Exception Handling
+* Scanner Class
+* LocalDateTime
+* DateTimeFormatter
+
+---
+
+## How It Works
+
+1. The user enters a log level (`INFO`, `WARNING`, or `ERROR`).
+2. The application validates the entered log level.
+3. The user enters a log message.
+4. The application checks that the message is not empty.
+5. The current date and time are generated automatically.
+6. The log entry is written to `log.txt`.
+7. If the file already contains logs, the new entry is appended.
+
+---
+
+## Log Entry Format
+
+```
+[YYYY-MM-DD HH:MM:SS] [LOG_LEVEL] Log Message
+```
+
+Example:
+
+```
+[2026-07-05 15:20:15] [INFO] User logged in successfully
+```
+
+---
+
+## Input Validation
+
+The application validates the following:
+
+* Log level must be one of:
+
+  * INFO
+  * WARNING
+  * ERROR
+* Log message cannot be empty.
+
+If invalid input is provided, the application displays an appropriate error message and exits safely.
+
+---
+
+## Concepts Demonstrated
+
+* Object-Oriented Programming
+* File Handling
+* Exception Handling
+* User Input Validation
+* Date and Time API
+* String Manipulation
+* Console-Based Application Development
+
+---
+
+## Learning Outcomes
+
+This project helps in understanding:
+
+* Writing data to text files
+* Appending data to existing files
+* Using Java's `LocalDateTime` and `DateTimeFormatter`
+* Handling exceptions using `try-with-resources`
+* Designing structured log records
+* Validating user input before processing
+
+---
+
+
 ## Technologies Used
 - Java
 - Eclipse IDE
 
+## Author
 
-## 👩‍💻 Author
-
-**Aarthi T**
+**Aarthi**
 
 B.Tech – Artificial Intelligence and Data Science
 
-Java Developer | Problem Solver | AI Enthusiast
+Java | Python | SQL | Machine Learning | Spring Boot | AI Enthusiast
 
----
+
+
