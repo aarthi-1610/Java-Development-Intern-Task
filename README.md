@@ -1,4 +1,4 @@
-# Level1
+# Level 1
 # Task 1 - Number Grid Search
 
 ## Objective
@@ -123,7 +123,7 @@ Develop a Java application to generate secure and customizable passwords based o
 
 =======
 
-# Level2
+# Level 2
 
 # Task 1 - ❌⭕ Two-Player Tic-Tac-Toe
 
@@ -133,7 +133,7 @@ A fully interactive **two-player console-based Tic-Tac-Toe game** built in Java.
 
 ## 📌 About the Project
 
-This project was developed as part of a **Java Development Internship (Level 2)** at SaiKet Systems. It demonstrates game logic design, conditional branching, input validation, and clean console-based UI in Java.
+This project was developed as part of a **Java Development Internship (Level 2)**. It demonstrates game logic design, conditional branching, input validation, and clean console-based UI in Java.
 
 ---
 
@@ -250,7 +250,7 @@ A Java console application that evaluates the **strength of any password** again
 
 ## 📌 About the Project
 
-This project was developed as part of a **Java Development Internship (Level 2)** at SaiKet Systems. It demonstrates validation logic, character-level analysis, and meaningful user feedback in a clean Java program.
+This project was developed as part of a **Java Development Internship (Level 2)**. It demonstrates validation logic, character-level analysis, and meaningful user feedback in a clean Java program.
 
 ---
 
@@ -374,7 +374,7 @@ A Java console application that **encrypts and decrypts text files** using the *
 
 ## 📌 About the Project
 
-This project was developed as part of a **Java Development Internship (Level 2)** at SaiKet Systems. It demonstrates file I/O operations, algorithm implementation, and exception handling in Java.
+This project was developed as part of a **Java Development Internship (Level 2)**. It demonstrates file I/O operations, algorithm implementation, and exception handling in Java.
 
 ---
 
@@ -504,7 +504,7 @@ A Java console application that helps you **track daily expenses with persistent
 
 ## 📌 About the Project
 
-This project was developed as part of a **Java Development Internship (Level 2)** at SaiKet Systems. It demonstrates file-based data persistence, menu-driven interaction, and structured data handling in Java — without any external database.
+This project was developed as part of a **Java Development Internship (Level 2)**. It demonstrates file-based data persistence, menu-driven interaction, and structured data handling in Java — without any external database.
 
 ---
 
@@ -630,7 +630,7 @@ The file is opened in **append mode** — existing data is never overwritten.
 ---
 
 
-# Level3
+# Level 3
 
 # Task 1 -  Contact Management System 
 
@@ -1348,6 +1348,152 @@ This project helps in understanding:
 
 ---
 
+# Level 4
+
+# Task 1 - Automated file organizer
+
+## Overview
+
+The **File Organizer** is a Java console application that automatically organizes files into categorized folders based on their file extensions. It helps keep directories clean and well-structured by moving files into folders such as **Images**, **Documents**, **Videos**, **Audio**, **Archives**, **Code**, and **Others**.
+
+This project demonstrates practical file management using Java's File Handling and NIO APIs, making it an excellent beginner-friendly real-world automation project.
+
+---
+
+## Features
+
+* Organizes files automatically based on file extensions.
+* Creates category folders if they do not already exist.
+* Moves files into their respective folders.
+* Handles multiple file types.
+* Prevents application crashes through exception handling.
+* Validates the provided folder path.
+* Displays the status of each moved file.
+* Uses Java NIO for efficient file movement.
+
+---
+
+## Supported File Categories
+
+| Category  | Supported Extensions            |
+| --------- | ------------------------------- |
+| Images    | `.jpg`, `.jpeg`, `.png`, `.gif` |
+| Documents | `.pdf`, `.doc`, `.docx`, `.txt` |
+| Videos    | `.mp4`, `.avi`, `.mkv`, `.mov`  |
+| Audio     | `.mp3`, `.wav`, `.aac`          |
+| Archives  | `.zip`, `.rar`, `.7z`           |
+| Code      | `.java`, `.cpp`, `.py`, `.js`   |
+| Others    | Any unsupported file extension  |
+
+---
+
+## Technologies Used
+
+* Java
+* Java File Handling (`java.io.File`)
+* Java NIO (`Files.move`)
+* Exception Handling
+* Scanner Class
+* Conditional Statements
+
+---
+
+## How It Works
+
+1. The user enters the path of the folder to organize.
+2. The application validates whether the folder exists.
+3. All files in the selected folder are scanned.
+4. The extension of each file is identified.
+5. A category is determined based on the file extension.
+6. If the category folder does not exist, it is created automatically.
+7. The file is moved into its corresponding category folder.
+8. The application displays the status of every file that is processed.
+
+---
+
+## Folder Structure Example
+
+### Before Organizing
+
+```text
+Downloads/
+│── photo.jpg
+│── report.pdf
+│── movie.mp4
+│── music.mp3
+│── project.java
+│── archive.zip
+│── notes.txt
+│── unknown.xyz
+```
+
+### After Organizing
+
+```text
+Downloads/
+│
+├── Images/
+│     └── photo.jpg
+│
+├── Documents/
+│     ├── report.pdf
+│     └── notes.txt
+│
+├── Videos/
+│     └── movie.mp4
+│
+├── Audio/
+│     └── music.mp3
+│
+├── Archives/
+│     └── archive.zip
+│
+├── Code/
+│     └── project.java
+│
+└── Others/
+      └── unknown.xyz
+```
+
+---
+
+## Input Validation
+
+The application checks for the following conditions before organizing files:
+
+* Folder path cannot be empty.
+* The specified folder must exist.
+* The specified path must be a valid directory.
+* Displays an appropriate message if no files are found.
+* Handles file movement errors gracefully.
+
+---
+
+## Concepts Demonstrated
+
+* File Handling
+* Java NIO File Operations
+* Directory Creation
+* File Extension Extraction
+* Conditional Logic
+* Exception Handling
+* User Input Validation
+* Console-Based Application Development
+
+---
+
+## Learning Outcomes
+
+This project helps in understanding:
+
+* Working with files and directories in Java.
+* Using `Files.move()` to relocate files.
+* Automatically creating folders.
+* Identifying file types using extensions.
+* Building simple file automation utilities.
+* Writing clean and reusable methods.
+
+---
 
 ## Technologies Used
 - Java
