@@ -1495,13 +1495,134 @@ This project helps in understanding:
 
 ---
 
+# Task 2 -Daily Task Manager
+
+## Overview
+
+The **Daily Task Manager** is a Java console-based application that helps users manage their daily tasks efficiently. It allows users to add, view, and delete tasks while storing them permanently in a text file. The application automatically loads previously saved tasks when it starts, ensuring that task data is preserved between program executions.
+
+This project demonstrates practical use of Java collections, file handling, user input validation, and menu-driven application development.
+
+---
+
+## Features
+
+* Add new daily tasks.
+* View all saved tasks.
+* Delete tasks by selecting their task number.
+* Automatically saves tasks to a text file.
+* Loads existing tasks when the application starts.
+* Validates user input to prevent invalid operations.
+* Displays appropriate success and error messages.
+* Simple and user-friendly menu-driven interface.
+
+---
+
+## Technologies Used
+
+* Java
+* Java Collections (`ArrayList`)
+* File Handling (`FileReader`, `FileWriter`, `BufferedReader`, `PrintWriter`)
+* Exception Handling
+* Scanner Class
+* Console-Based User Interface
+
+---
+
+## How It Works
+
+1. The application starts by loading previously saved tasks from `tasks.txt`.
+2. A menu is displayed with available operations.
+3. The user selects one of the following options:
+
+   * Add Task
+   * View Tasks
+   * Delete Task
+   * Exit
+4. Any changes made to the task list are automatically saved to the file.
+5. When the application is restarted, all previously saved tasks are loaded again.
+
+---
+
+## Menu Options
+
+```text
+Daily Task Manager
+
+1. Add Task
+2. View Tasks
+3. Delete Task
+4. Exit
+```
+
+---
+
+## Task Storage
+
+Tasks are stored in a simple text file named:
+
+```text
+tasks.txt
+```
+
+Each line in the file represents one task.
+
+Example:
+
+```text
+Complete Java assignment
+Practice SQL queries
+Prepare for interview
+```
+
+---
+
+## Input Validation
+
+The application performs several validations:
+
+* Task cannot be empty.
+* Menu choice must be a valid number.
+* Task number must exist before deletion.
+* Handles invalid numeric and text inputs gracefully.
+* Displays appropriate error messages without crashing the application.
+
+---
+
+## Concepts Demonstrated
+
+* Object-Oriented Programming (OOP)
+* Java Collections (`ArrayList`)
+* File Handling
+* Persistent Data Storage
+* Exception Handling
+* User Input Validation
+* Menu-Driven Programming
+* Console Application Development
+
+---
+
+## Learning Outcomes
+
+This project helps in understanding:
+
+* Reading data from text files.
+* Writing data to files.
+* Using `ArrayList` for dynamic data storage.
+* Creating reusable methods.
+* Implementing CRUD operations (Create, Read, Delete).
+* Building interactive console applications.
+* Persisting application data between executions.
+
+---
+
 ## Technologies Used
 - Java
 - Eclipse IDE
 
 ## Author
 
-**Aarthi**
+**Aarthi T**
 
 B.Tech – Artificial Intelligence and Data Science
 
