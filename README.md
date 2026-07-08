@@ -1614,6 +1614,145 @@ This project helps in understanding:
 * Building interactive console applications.
 * Persisting application data between executions.
 
+
+
+# Task 3 - Student Report Generator
+
+## Overview
+
+The **Student Report Generator** is a Java console-based application that generates a student's academic report by calculating the total marks, average percentage, and grade based on marks entered by the user. The application includes robust input validation to ensure meaningful student names, valid subject counts, valid marks, and prevents duplicate student names during program execution.
+
+This project demonstrates fundamental Java programming concepts, including arrays, methods, loops, conditional statements, collections, and user input validation through a practical real-world application.
+
+---
+
+## Features
+
+* Accepts student details through a console-based interface.
+* Validates student names (letters and spaces only).
+* Prevents empty or invalid student names.
+* Restricts student name length.
+* Prevents duplicate student names during execution.
+* Accepts marks for any number of subjects.
+* Validates marks between 0 and 100.
+* Calculates:
+
+  * Total Marks
+  * Average Marks
+  * Grade
+* Generates a well-formatted student report.
+* Allows multiple student reports in a single execution.
+
+---
+
+## Grade Criteria
+
+| Average Marks | Grade |
+| ------------: | :---: |
+|      90 – 100 |   A   |
+|       80 – 89 |   B   |
+|       70 – 79 |   C   |
+|       60 – 69 |   D   |
+|      Below 60 |   F   |
+
+---
+
+## Technologies Used
+
+* Java
+* Arrays
+* ArrayList
+* Methods
+* Loops
+* Conditional Statements
+* Scanner Class
+* Exception-Free Input Validation
+* Console-Based User Interface
+
+---
+
+## How It Works
+
+1. The user enters the student's name.
+2. The application validates the name.
+3. Duplicate names are checked during program execution.
+4. The user enters the number of subjects.
+5. Marks for each subject are entered.
+6. Each mark is validated to ensure it is between 0 and 100.
+7. The application calculates:
+
+   * Total Marks
+   * Average Marks
+   * Grade
+8. A formatted student report is displayed.
+9. The user can generate reports for additional students or exit the application.
+
+---
+
+## Sample Output
+
+```text
+Enter Student Name: John Deo
+Enter Number of Subjects: 3
+Enter Marks for Subject 1: 95
+Enter Marks for Subject 2: 88
+Enter Marks for Subject 3: 92
+
+==============================
+        STUDENT REPORT
+==============================
+Name      : John Deo
+Subject 1 : 95
+Subject 2 : 88
+Subject 3 : 92
+Total     : 275
+Average   : 91.67
+Grade     : A
+==============================
+```
+
+---
+
+## Input Validation
+
+The application validates the following:
+
+* Student name cannot be empty.
+* Student name must contain only letters and spaces.
+* Student name must contain at least 3 characters.
+* Student name cannot exceed 30 characters.
+* Duplicate student names are not allowed during execution.
+* Number of subjects must be greater than zero.
+* Subject marks must be between 0 and 100.
+* Invalid numeric inputs are handled gracefully.
+
+---
+
+## Concepts Demonstrated
+
+* Object-Oriented Programming (OOP)
+* Arrays
+* ArrayList
+* Method Creation and Reusability
+* Input Validation
+* Loops
+* Conditional Statements
+* Console-Based Application Development
+
+---
+
+## Learning Outcomes
+
+This project helps in understanding:
+
+* Working with arrays for storing marks.
+* Using methods to improve code reusability.
+* Calculating totals and averages.
+* Implementing grading logic using conditional statements.
+* Validating user input effectively.
+* Preventing duplicate entries using `ArrayList`.
+* Building interactive menu-driven console applications.
+
 ---
 
 ## Technologies Used
