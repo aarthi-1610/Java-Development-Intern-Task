@@ -1755,6 +1755,142 @@ This project helps in understanding:
 
 ---
 
+# Task 4 - CSV Data Processor 
+
+## 📌 Project Overview
+
+The **CSV Data Processor** is a beginner-friendly real-world Java project that reads and analyzes CSV (Comma-Separated Values) files. It demonstrates file handling, data validation, duplicate detection, exception handling, and basic statistical calculations using Java.
+
+This project is designed to simulate how real-world applications process and validate CSV datasets before performing data analysis.
+
+---
+
+## 🚀 Features
+
+* Read any CSV file
+* Validate the input file name
+* Skip the header row automatically
+* Ignore blank lines
+* Ignore empty cells
+* Detect and ignore literal `NaN` values
+* Detect and ignore non-numeric values (e.g., `abc`, `xyz`)
+* Detect and skip duplicate records
+* Calculate:
+
+  * Total Rows
+  * Valid Rows
+  * Duplicate Rows
+  * Invalid Rows
+  * Empty Values
+  * NaN Values
+* Generate statistical results:
+
+  * Sum
+  * Average
+  * Minimum Value
+  * Maximum Value
+* Display a professional processing summary
+* Handle invalid files and runtime errors gracefully
+
+---
+
+## 🛠️ Technologies Used
+
+* Java
+* Java IO (`BufferedReader`, `FileReader`)
+* Collections (`HashSet`)
+* Exception Handling
+* Scanner Class
+
+---
+
+## 📄 Sample CSV File
+
+```csv
+Employee,Salary,Age
+Anu,69000,22
+Raj,87000,34
+Tom,34000,21
+John,59000,20
+Veni,67000,31
+Mano,72000,23
+Harini,53000,33
+Divya,34000,41
+Sara,NaN,24
+Peter,abc,31
+David,,32
+Anu,69000,22
+```
+
+---
+
+## ▶️ How to Run
+
+1. Open the project in your Java IDE (Eclipse, IntelliJ IDEA, or VS Code).
+2. Place the CSV file in the project directory (or provide the correct file path).
+3. Run the `CSVDataProcessor` class.
+4. Enter the CSV file name when prompted.
+
+Example:
+
+```text
+Enter CSV file name: employees.csv
+```
+
+---
+
+## 📊 Sample Output
+
+```text
+========================================
+        CSV PROCESSING SUMMARY
+========================================
+Total Rows           : 12
+Valid Rows           : 8
+Duplicate Rows       : 1
+Invalid Rows         : 1
+Empty Values         : 1
+NaN Values           : 1
+----------------------------------------
+Sum                  : 475000.00
+Average              : 59375.00
+Minimum              : 34000.00
+Maximum              : 87000.00
+========================================
+```
+
+> **Note:** The exact output depends on the CSV file and the processing logic used.
+
+---
+
+## 💡 Concepts Covered
+
+* File Handling
+* CSV Parsing
+* Data Validation
+* Duplicate Detection
+* Exception Handling
+* Collections (`HashSet`)
+* Loops and Conditional Statements
+* Statistical Calculations
+* Input Validation
+* Clean Code Practices
+
+---
+
+## 🎯 Learning Outcomes
+
+By completing this project, you will gain practical experience in:
+
+* Reading and processing CSV files in Java
+* Handling real-world data validation scenarios
+* Working with collections for duplicate detection
+* Implementing robust exception handling
+* Computing basic statistical summaries
+* Writing clean, maintainable Java code
+
+---
+
 ## Technologies Used
 - Java
 - Eclipse IDE
